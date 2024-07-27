@@ -4,3 +4,5 @@
 # Ignore other common sensitive files
 *.env
 .env.*
+
+venv/
