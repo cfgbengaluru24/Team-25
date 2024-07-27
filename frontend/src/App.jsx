@@ -29,9 +29,9 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
+    <div className="bg-gray-200 w-[100vw] h-[100vh]">
       <header className="absolute inset-x-0 top-0 z-50">
-      <h1 class="items-center" style={myStyle}>EXPA India!</h1>
+      <h1 className="items-center" style={myStyle}>EXPA India!</h1>
       <br></br>
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
@@ -90,7 +90,7 @@ export default function Example() {
                 <XMarkIcon aria-hidden="true" className="h-6 w-6" />
               </button>
             </div>
-            <div style="background-image: url('C:\jpmc\Team-25\frontend\bg1.png')"className="mt-6 flow-root">
+            <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
@@ -117,7 +117,7 @@ export default function Example() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 pt-14 lg:px-8 bg-[url('https://th.bing.com/th/id/OIP.ZYSdBU__TSFOYVl-knWTCwHaF7?w=1280&h=1024&rs=1&pid=ImgDetMain')] bg-cover bg-center w-[100vw] h-[100vh]">
         {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -155,7 +155,11 @@ export default function Example() {
                 Get started
               </a> */}
                <Link to={`/login`} className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              Log in <span aria-hidden="true">&rarr;</span>
+              Log in for Trainee <span aria-hidden="true">&rarr;</span>
+            </Link>
+
+            <Link to={`/login`} className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Log in for Admin <span aria-hidden="true">&rarr;</span>
             </Link>
               {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
@@ -163,7 +167,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
         >
@@ -174,7 +178,7 @@ export default function Example() {
             }}
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )
