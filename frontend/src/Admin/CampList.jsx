@@ -43,7 +43,10 @@ const CampList = () => {
                     {camp.price}
                   </td>
                   <td className="px-6 py-4">
-                    <Link to={`${camp.id}`} className="font-medium text-blue-600 hover:underline">Edit</Link>
+                    <Link to={{
+                      pathname: `${camp.id}`,
+                      state: { location: camp.location }
+                    }} className="font-medium text-blue-600 hover:underline">More Details</Link>
                   </td>
                 </tr>
               ))}

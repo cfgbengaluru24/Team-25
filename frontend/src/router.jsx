@@ -9,6 +9,7 @@ import TraineeDashboard from './Trainee/TraineeDashboard'
 import Courses from './Trainee/Courses'
 import TrainerDashboard from "./Trainer/TrainerDashboard";
 import TravelDetails from "./Trainer/TravelDetails";
+import AddTrainer from "./Admin/AddTrainer";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: 'camplist/:id',
         element: <MentorList />
+      },
+      {
+        path: 'add-trainer',
+        element: <AddTrainer/>
       }
 
     ]
