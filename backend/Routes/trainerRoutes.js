@@ -5,6 +5,9 @@ import rateLimiter from "express-rate-limit";
 import {
   createTrainer,
   getBestTrainers,
+  getCheapestFlights,
+  rejectTrainer,
+  selectTrainer,
 } from "../controllers/trainerController.js";
 
 const apiLimiter = rateLimiter({
@@ -14,6 +17,9 @@ const apiLimiter = rateLimiter({
 });
 
 router.route("/get-trainers").post(apiLimiter, getBestTrainers);
+router.route("/get-flights").get(apiLimiter, getCheapestFlights);
 router.route("/create-trainer").post(apiLimiter, createTrainer);
+router.route("/accept").post(apiLimiter, selectTrainer);
+router.route("/reject").post(apiLimiter, rejectTrainer);
 
 export default router;

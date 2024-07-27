@@ -1,0 +1,1312 @@
+[
+  {
+    "IATA_code": "AGX",
+    "ICAO_code": "VOAT",
+    "airport_name": "Agatti Island Airport",
+    "city_name": "Agatti Island",
+    "coordinates": {
+      "x": 10.8476321,
+      "y": 72.18884683727894
+    }
+  },
+  {
+    "IATA_code": "AMD",
+    "ICAO_code": "VAAH",
+    "airport_name": "Ahmedabad Airport",
+    "city_name": "Ahmedabad",
+    "coordinates": {
+      "x": 23.071655,
+      "y": 72.619764
+    }
+  },
+  {
+    "IATA_code": "AJL",
+    "ICAO_code": "VEAZ",
+    "airport_name": "Aizawl Airport",
+    "city_name": "Aizawl",
+    "coordinates": {
+      "x": 23.736603,
+      "y": 92.709311
+    }
+  },
+  {
+    "IATA_code": "AKD",
+    "ICAO_code": "VAAK",
+    "airport_name": "Akola Airport",
+    "city_name": "Akola",
+    "coordinates": {
+      "x": 20.697417,
+      "y": 77.06134451392703
+    }
+  },
+  {
+    "IATA_code": "IXV",
+    "ICAO_code": "VEAN",
+    "airport_name": "Along Airport",
+    "city_name": "Along",
+    "coordinates": {
+      "x": 28.1769663,
+      "y": 94.80547708580416
+    }
+  },
+  {
+    "IATA_code": "LKO",
+    "ICAO_code": "VILK",
+    "airport_name": "Amausi Airport",
+    "city_name": "Lucknow",
+    "coordinates": {
+      "x": 26.7774158,
+      "y": 80.9026554
+    }
+  },
+  {
+    "IATA_code": "LUH",
+    "ICAO_code": "VILD",
+    "airport_name": "Amritsar Airport",
+    "city_name": "Ludhiana",
+    "coordinates": {
+      "x": 31.62384,
+      "y": 74.77253
+    }
+  },
+  {
+    "IATA_code": "IXB",
+    "ICAO_code": "VEBD",
+    "airport_name": "Bagdogra Airport",
+    "city_name": "Bagdogra",
+    "coordinates": {
+      "x": 26.6821128,
+      "y": 88.32906870592839
+    }
+  },
+  {
+    "IATA_code": "IXE",
+    "ICAO_code": "VOML",
+    "airport_name": "Bajpe Airport",
+    "city_name": "Mangalore",
+    "coordinates": {
+      "x": 12.96127,
+      "y": 74.89007
+    }
+  },
+  {
+    "IATA_code": "RGH",
+    "ICAO_code": "VEBG",
+    "airport_name": "Balurghat Airport",
+    "city_name": "Balurghat",
+    "coordinates": {
+      "x": 25.262134250000003,
+      "y": 88.79618348075888
+    }
+  },
+  {
+    "IATA_code": "IXD",
+    "ICAO_code": "VIAL",
+    "airport_name": "Bamrauli Airport",
+    "city_name": "Allahabad",
+    "coordinates": {
+      "x": 27.117619,
+      "y": 77.976089
+    }
+  },
+  {
+    "IATA_code": "SHL",
+    "ICAO_code": "VEBI",
+    "airport_name": "Barapani Airport",
+    "city_name": "Shillong",
+    "coordinates": {
+      "x": 25.574862,
+      "y": 91.88268
+    }
+  },
+  {
+    "IATA_code": "BEK",
+    "ICAO_code": "VOPN",
+    "airport_name": "Bareli Airport",
+    "city_name": "Bareli",
+    "coordinates": {
+      "x": 22.17376,
+      "y": 78.11805
+    }
+  },
+  {
+    "IATA_code": "BEP",
+    "ICAO_code": "VOBI",
+    "airport_name": "Bellary Airport",
+    "city_name": "Bellary",
+    "coordinates": {
+      "x": 15.16220255,
+      "y": 76.88153285750052
+    }
+  },
+  {
+    "IATA_code": "BLR",
+    "ICAO_code": "VOBG",
+    "airport_name": "Bengaluru International Airport",
+    "city_name": "Bangalore",
+    "coordinates": {
+      "x": 13.202096,
+      "y": 77.704536
+    }
+  },
+  {
+    "IATA_code": "BUP",
+    "ICAO_code": "VIBT",
+    "airport_name": "Bhatinda Airport",
+    "city_name": "Bhatinda",
+    "coordinates": {
+      "x": 26.08128,
+      "y": 73.296196
+    }
+  },
+  {
+    "IATA_code": "BHU",
+    "ICAO_code": "VABV",
+    "airport_name": "Bhavnagar Airport",
+    "city_name": "Bhavnagar",
+    "coordinates": {
+      "x": 21.7528163,
+      "y": 72.18697803465328
+    }
+  },
+  {
+    "IATA_code": "BHO",
+    "ICAO_code": "VABP",
+    "airport_name": "Bhopal Airport",
+    "city_name": "Bhopal",
+    "coordinates": {
+      "x": 23.29064585,
+      "y": 77.32942176517878
+    }
+  },
+  {
+    "IATA_code": "BBI",
+    "ICAO_code": "VEBS",
+    "airport_name": "Bhubaneswar Airport",
+    "city_name": "Bhubaneswar",
+    "coordinates": {
+      "x": 20.266777,
+      "y": 85.843559
+    }
+  },
+  {
+    "IATA_code": "BKB",
+    "ICAO_code": "VIBK",
+    "airport_name": "Bikaner Airport",
+    "city_name": "Bikaner",
+    "coordinates": {
+      "x": 28.03689,
+      "y": 73.337002
+    }
+  },
+  {
+    "IATA_code": "PAB",
+    "ICAO_code": "VABI",
+    "airport_name": "Bilaspur Airport",
+    "city_name": "Bilaspur",
+    "coordinates": {
+      "x": 21.98934025,
+      "y": 82.10996498737376
+    }
+  },
+  {
+    "IATA_code": "IXR",
+    "ICAO_code": "VERC",
+    "airport_name": "Birsa Munda International Airport",
+    "city_name": "Ranchi",
+    "coordinates": {
+      "x": 23.314786,
+      "y": 85.325149
+    }
+  },
+  {
+    "IATA_code": "GAU",
+    "ICAO_code": "VEGT",
+    "airport_name": "Borjhar Airport",
+    "city_name": "Guwahati",
+    "coordinates": {
+      "x": 26.099611,
+      "y": 91.60413
+    }
+  },
+  {
+    "IATA_code": "CBD",
+    "ICAO_code": "VECX",
+    "airport_name": "Car Nicobar Airport",
+    "city_name": "Car Nicobar",
+    "coordinates": {
+      "x": 9.176518,
+      "y": 92.771249
+    }
+  },
+  {
+    "IATA_code": "IXC",
+    "ICAO_code": "VICG",
+    "airport_name": "Chandigarh Airport",
+    "city_name": "Chandigarh",
+    "coordinates": {
+      "x": 30.674192249999997,
+      "y": 76.79098506460022
+    }
+  },
+  {
+    "IATA_code": "MAA",
+    "ICAO_code": "VOMM",
+    "airport_name": "Chennai International Airport",
+    "city_name": "Chennai",
+    "coordinates": {
+      "x": 12.982157,
+      "y": 80.246601
+    }
+  },
+  {
+    "IATA_code": "BOM",
+    "ICAO_code": "VABB",
+    "airport_name": "Chhatrapati Shivaji International Airport",
+    "city_name": "Mumbai",
+    "coordinates": {
+      "x": 19.09015275,
+      "y": 72.86371349380883
+    }
+  },
+  {
+    "IATA_code": "IXU",
+    "ICAO_code": "VAAU",
+    "airport_name": "Chikkalthana Airport",
+    "city_name": "Aurangabad",
+    "coordinates": {
+      "x": 19.864205,
+      "y": 75.398194
+    }
+  },
+  {
+    "IATA_code": "COK",
+    "ICAO_code": "VOCI",
+    "airport_name": "Cochin International Airport",
+    "city_name": "Kochi",
+    "coordinates": {
+      "x": 34.42731,
+      "y": 135.24407
+    }
+  },
+  {
+    "IATA_code": "COH",
+    "ICAO_code": "VECO",
+    "airport_name": "Cooch Behar Airport",
+    "city_name": "Cooch Behar",
+    "coordinates": {
+      "x": 26.32970445,
+      "y": 89.46984059334517
+    }
+  },
+  {
+    "IATA_code": "CDP",
+    "ICAO_code": "VOCP",
+    "airport_name": "Cuddapah Airport",
+    "city_name": "Cuddapah",
+    "coordinates": {
+      "x": 14.45136,
+      "y": 78.82975
+    }
+  },
+  {
+    "IATA_code": "UDR",
+    "ICAO_code": "VAUD",
+    "airport_name": "Dabok Airport",
+    "city_name": "Udaipur",
+    "coordinates": {
+      "x": 24.615497,
+      "y": 73.865591
+    }
+  },
+  {
+    "IATA_code": "GOI",
+    "ICAO_code": "VAGO",
+    "airport_name": "Dabolim Airport",
+    "city_name": "Goa",
+    "coordinates": {
+      "x": 15.3850535,
+      "y": 73.8353129161143
+    }
+  },
+  {
+    "IATA_code": "NMB",
+    "ICAO_code": "VADN",
+    "airport_name": "Daman Airport",
+    "city_name": "Daman",
+    "coordinates": {
+      "x": 20.427695800000002,
+      "y": 72.84005610631483
+    }
+  },
+  {
+    "IATA_code": "DAE",
+    "ICAO_code": "VEDZ",
+    "airport_name": "Daparizo Airport",
+    "city_name": "Daparizo",
+    "coordinates": {
+      "x": -37.724509,
+      "y": 144.882255
+    }
+  },
+  {
+    "IATA_code": "DAI",
+    "ICAO_code": "",
+    "airport_name": "Darjeeling Airport",
+    "city_name": "Darjeeling",
+    "coordinates": {
+      "x": 27.0381147,
+      "y": 88.263061
+    }
+  },
+  {
+    "IATA_code": "DED",
+    "ICAO_code": "VIDN",
+    "airport_name": "Dehra Dun Airport",
+    "city_name": "Dehra Dun",
+    "coordinates": {
+      "x": 30.32443,
+      "y": 78.03392
+    }
+  },
+  {
+    "IATA_code": "DEP",
+    "ICAO_code": "",
+    "airport_name": "Deparizo Airport",
+    "city_name": "Deparizo",
+    "coordinates": {
+      "x": -37.724509,
+      "y": 144.882255
+    }
+  },
+  {
+    "IATA_code": "IDR",
+    "ICAO_code": "VAID",
+    "airport_name": "Devi Ahilyabai Holkar Airport",
+    "city_name": "Indore",
+    "coordinates": {
+      "x": 22.72037445,
+      "y": 75.80325441800845
+    }
+  },
+  {
+    "IATA_code": "DBD",
+    "ICAO_code": "VEDB",
+    "airport_name": "Dhanbad Airport",
+    "city_name": "Dhanbad",
+    "coordinates": {
+      "x": 23.834079850000002,
+      "y": 86.426677965843
+    }
+  },
+  {
+    "IATA_code": "DIB",
+    "ICAO_code": "VEMN",
+    "airport_name": "Dibrugarh Airport",
+    "city_name": "Dibrugarh",
+    "coordinates": {
+      "x": 27.4854679,
+      "y": 95.0170764
+    }
+  },
+  {
+    "IATA_code": "DMU",
+    "ICAO_code": "VEMR",
+    "airport_name": "Dimapur Airport",
+    "city_name": "Dimapur",
+    "coordinates": {
+      "x": 25.906871,
+      "y": 93.728459
+    }
+  },
+  {
+    "IATA_code": "DIU",
+    "ICAO_code": "VA1P",
+    "airport_name": "Diu Airport",
+    "city_name": "Diu",
+    "coordinates": {
+      "x": 20.71439565,
+      "y": 70.92204629253624
+    }
+  },
+  {
+    "IATA_code": "DHM",
+    "ICAO_code": "VIGG",
+    "airport_name": "Gaggal Airport",
+    "city_name": "Dharamsala",
+    "coordinates": {
+      "x": 32.154000100000005,
+      "y": 76.26932667833022
+    }
+  },
+  {
+    "IATA_code": "ISK",
+    "ICAO_code": "VANR",
+    "airport_name": "Gandhinagar Airport",
+    "city_name": "Nasik",
+    "coordinates": {
+      "x": 19.9637,
+      "y": 73.8076
+    }
+  },
+  {
+    "IATA_code": "GAY",
+    "ICAO_code": "VEGY",
+    "airport_name": "Gaya Airport",
+    "city_name": "Gaya",
+    "coordinates": {
+      "x": 24.7469689,
+      "y": 84.9452677
+    }
+  },
+  {
+    "IATA_code": "GOP",
+    "ICAO_code": "VEGK",
+    "airport_name": "Gorakhpur Airport",
+    "city_name": "Gorakhpur",
+    "coordinates": {
+      "x": 26.733153549999997,
+      "y": 83.46131082635866
+    }
+  },
+  {
+    "IATA_code": "JGA",
+    "ICAO_code": "VAJM",
+    "airport_name": "Govardhanpur Airport",
+    "city_name": "Jamnagar",
+    "coordinates": {
+      "x": 22.466914,
+      "y": 70.008433
+    }
+  },
+  {
+    "IATA_code": "GUX",
+    "ICAO_code": "VAGN",
+    "airport_name": "Guna Airport",
+    "city_name": "Guna",
+    "coordinates": {
+      "x": 24.6545819,
+      "y": 77.34696806639303
+    }
+  },
+  {
+    "IATA_code": "GWL",
+    "ICAO_code": "VIGR",
+    "airport_name": "Gwalior Airport",
+    "city_name": "Gwalior",
+    "coordinates": {
+      "x": 26.223057,
+      "y": 78.165904
+    }
+  },
+  {
+    "IATA_code": "HSS",
+    "ICAO_code": "VIHR",
+    "airport_name": "Hissar Airport",
+    "city_name": "Hissar",
+    "coordinates": {
+      "x": 29.515752,
+      "y": 75.447902
+    }
+  },
+  {
+    "IATA_code": "HBX",
+    "ICAO_code": "VAHB",
+    "airport_name": "Hubli Airport",
+    "city_name": "Hubli",
+    "coordinates": {
+      "x": 15.3617,
+      "y": 75.0849
+    }
+  },
+  {
+    "IATA_code": "HYD",
+    "ICAO_code": "VOHY",
+    "airport_name": "Hyderabad International Airport",
+    "city_name": "Hyderabad",
+    "coordinates": {
+      "x": 17.47273,
+      "y": 78.373611
+    }
+  },
+  {
+    "IATA_code": "DEL",
+    "ICAO_code": "VIDP",
+    "airport_name": "Indira Gandhi International Airport",
+    "city_name": "New Delhi",
+    "coordinates": {
+      "x": 28.5551678,
+      "y": 77.08473721064372
+    }
+  },
+  {
+    "IATA_code": "JLR",
+    "ICAO_code": "VAJB",
+    "airport_name": "Jabalpur Airport",
+    "city_name": "Jabalpur",
+    "coordinates": {
+      "x": 23.190323,
+      "y": 79.914566
+    }
+  },
+  {
+    "IATA_code": "JGB",
+    "ICAO_code": "",
+    "airport_name": "Jagdalpur Airport",
+    "city_name": "Jagdalpur",
+    "coordinates": {
+      "x": 19.073899750000002,
+      "y": 82.03638010903728
+    }
+  },
+  {
+    "IATA_code": "JSA",
+    "ICAO_code": "VIJR",
+    "airport_name": "Jaisalmer Airport",
+    "city_name": "Jaisalmer",
+    "coordinates": {
+      "x": 26.87022025,
+      "y": 70.85668158238228
+    }
+  },
+  {
+    "IATA_code": "PYB",
+    "ICAO_code": "VEJP",
+    "airport_name": "Jeypore Airport",
+    "city_name": "Jeypore",
+    "coordinates": {
+      "x": 18.879324,
+      "y": 82.55252920472144
+    }
+  },
+  {
+    "IATA_code": "JDH",
+    "ICAO_code": "VIJO",
+    "airport_name": "Jodhpur Airport",
+    "city_name": "Jodhpur",
+    "coordinates": {
+      "x": 26.26283795,
+      "y": 73.05243677120723
+    }
+  },
+  {
+    "IATA_code": "IXH",
+    "ICAO_code": "VEKR",
+    "airport_name": "Kailashahar Airport",
+    "city_name": "Kailashahar",
+    "coordinates": {
+      "x": 24.3085982,
+      "y": 92.0070366789366
+    }
+  },
+  {
+    "IATA_code": "IXQ",
+    "ICAO_code": "VEKM",
+    "airport_name": "Kamalpur Airport",
+    "city_name": "Kamalpur",
+    "coordinates": {
+      "x": 24.1317,
+      "y": 91.8142
+    }
+  },
+  {
+    "IATA_code": "IXY",
+    "ICAO_code": "VAKE",
+    "airport_name": "Kandla Airport",
+    "city_name": "Kandla",
+    "coordinates": {
+      "x": 58.366336,
+      "y": 22.281982
+    }
+  },
+  {
+    "IATA_code": "KNU",
+    "ICAO_code": "VIKA",
+    "airport_name": "Kanpur Airport",
+    "city_name": "Kanpur",
+    "coordinates": {
+      "x": 26.439774,
+      "y": 80.36493382243131
+    }
+  },
+  {
+    "IATA_code": "IXK",
+    "ICAO_code": "VAKS",
+    "airport_name": "Keshod Airport",
+    "city_name": "Keshod",
+    "coordinates": {
+      "x": 21.31486295,
+      "y": 70.26789366226589
+    }
+  },
+  {
+    "IATA_code": "HJR",
+    "ICAO_code": "VAKJ",
+    "airport_name": "Khajuraho Airport",
+    "city_name": "Khajuraho",
+    "coordinates": {
+      "x": 24.851525,
+      "y": 79.922789
+    }
+  },
+  {
+    "IATA_code": "AGR",
+    "ICAO_code": "VIAG",
+    "airport_name": "Kheria Airport",
+    "city_name": "Agra",
+    "coordinates": {
+      "x": 27.154179,
+      "y": 77.952987
+    }
+  },
+  {
+    "IATA_code": "IXN",
+    "ICAO_code": "VEKW",
+    "airport_name": "Khowai Airport",
+    "city_name": "Khowai",
+    "coordinates": {
+      "x": 24.0619,
+      "y": 91.6039
+    }
+  },
+  {
+    "IATA_code": "KLH",
+    "ICAO_code": "VAKP",
+    "airport_name": "Kolhapur Airport",
+    "city_name": "Kolhapur",
+    "coordinates": {
+      "x": 16.662192,
+      "y": 74.277216
+    }
+  },
+  {
+    "IATA_code": "KTU",
+    "ICAO_code": "VIKO",
+    "airport_name": "Kota Airport",
+    "city_name": "Kota",
+    "coordinates": {
+      "x": 25.160737249999997,
+      "y": 75.84543099482002
+    }
+  },
+  {
+    "IATA_code": "CCJ",
+    "ICAO_code": "VOCL",
+    "airport_name": "Kozhikode Airport",
+    "city_name": "Kozhikode",
+    "coordinates": {
+      "x": 11.2459092,
+      "y": 75.7803858
+    }
+  },
+  {
+    "IATA_code": "KUU",
+    "ICAO_code": "VIBR",
+    "airport_name": "Kullu Manali Airport",
+    "city_name": "Bhuntar Kullu.",
+    "coordinates": {
+      "x": 31.8875195,
+      "y": 77.1436237
+    }
+  },
+  {
+    "IATA_code": "IXS",
+    "ICAO_code": "VEKU",
+    "airport_name": "Kumbhirgram Airport",
+    "city_name": "Silchar",
+    "coordinates": {
+      "x": 24.756986,
+      "y": 93.89227
+    }
+  },
+  {
+    "IATA_code": "IXI",
+    "ICAO_code": "VELR",
+    "airport_name": "Lilabari Airport",
+    "city_name": "Lilabari",
+    "coordinates": {
+      "x": 27.2961368,
+      "y": 94.09734635719008
+    }
+  },
+  {
+    "IATA_code": "PNQ",
+    "ICAO_code": "VAPO",
+    "airport_name": "Lohegaon Airport",
+    "city_name": "Pune",
+    "coordinates": {
+      "x": 18.577419,
+      "y": 73.910158
+    }
+  },
+  {
+    "IATA_code": "IXM",
+    "ICAO_code": "VOMD",
+    "airport_name": "Madurai Airport",
+    "city_name": "Madurai",
+    "coordinates": {
+      "x": 9.836260750000001,
+      "y": 78.09391774820247
+    }
+  },
+  {
+    "IATA_code": "LDA",
+    "ICAO_code": "VEMH",
+    "airport_name": "Malda Airport",
+    "city_name": "Malda",
+    "coordinates": {
+      "x": 25.0110536,
+      "y": 88.12388671253065
+    }
+  },
+  {
+    "IATA_code": "MOH",
+    "ICAO_code": "VEMN",
+    "airport_name": "Mohanbari Airport",
+    "city_name": "Mohanbari",
+    "coordinates": {
+      "x": 28.478409,
+      "y": 76.393858
+    }
+  },
+  {
+    "IATA_code": "IMF",
+    "ICAO_code": "VEIM",
+    "airport_name": "Municipal Airport",
+    "city_name": "Imphal",
+    "coordinates": {
+      "x": 24.765162,
+      "y": 93.89694
+    }
+  },
+  {
+    "IATA_code": "MZA",
+    "ICAO_code": "",
+    "airport_name": "Muzaffarnagar Airport",
+    "city_name": "Muzaffarnagar",
+    "coordinates": {
+      "x": 29.470013,
+      "y": 77.708182
+    }
+  },
+  {
+    "IATA_code": "MZU",
+    "ICAO_code": "VEMZ",
+    "airport_name": "Muzaffarpur Airport",
+    "city_name": "Muzaffarpur",
+    "coordinates": {
+      "x": 26.1191,
+      "y": 85.3137
+    }
+  },
+  {
+    "IATA_code": "MYQ",
+    "ICAO_code": "VOMY",
+    "airport_name": "Mysore Airport",
+    "city_name": "Mysore",
+    "coordinates": {
+      "x": 12.3072,
+      "y": 76.6497
+    }
+  },
+  {
+    "IATA_code": "NDC",
+    "ICAO_code": "VAND",
+    "airport_name": "Nanded Airport",
+    "city_name": "Nanded",
+    "coordinates": {
+      "x": 19.181789000000002,
+      "y": 77.3229711209002
+    }
+  },
+  {
+    "IATA_code": "CCU",
+    "ICAO_code": "VECC",
+    "airport_name": "Netaji Subhash Chandra Bose International Airport",
+    "city_name": "Kolkata",
+    "coordinates": {
+      "x": 22.6564623,
+      "y": 88.44672447479577
+    }
+  },
+  {
+    "IATA_code": "NVY",
+    "ICAO_code": "VONV",
+    "airport_name": "Neyveli Airport",
+    "city_name": "Neyveli",
+    "coordinates": {
+      "x": 11.61315575,
+      "y": 79.52739782705439
+    }
+  },
+  {
+    "IATA_code": "OMN",
+    "ICAO_code": "",
+    "airport_name": "Osmanabad Airport",
+    "city_name": "Osmanabad",
+    "coordinates": {
+      "x": 18.202444,
+      "y": 76.042483
+    }
+  },
+  {
+    "IATA_code": "PGH",
+    "ICAO_code": "VIPT",
+    "airport_name": "Pantnagar Airport",
+    "city_name": "Pantnagar",
+    "coordinates": {
+      "x": 29.03307625,
+      "y": 79.47185127989417
+    }
+  },
+  {
+    "IATA_code": "IXT",
+    "ICAO_code": "VEPG",
+    "airport_name": "Pasighat Airport",
+    "city_name": "Pasighat",
+    "coordinates": {
+      "x": 28.06489315,
+      "y": 95.33637615187946
+    }
+  },
+  {
+    "IATA_code": "IXP",
+    "ICAO_code": "VIPK",
+    "airport_name": "Pathankot Airport",
+    "city_name": "Pathankot",
+    "coordinates": {
+      "x": 32.2718,
+      "y": 75.64443
+    }
+  },
+  {
+    "IATA_code": "PAT",
+    "ICAO_code": "VEPT",
+    "airport_name": "Patna Airport",
+    "city_name": "Patna",
+    "coordinates": {
+      "x": 25.5970572,
+      "y": 85.09116251309038
+    }
+  },
+  {
+    "IATA_code": "CJB",
+    "ICAO_code": "VOCB",
+    "airport_name": "Peelamedu Airport",
+    "city_name": "Coimbatore",
+    "coordinates": {
+      "x": 11.032916,
+      "y": 77.045806
+    }
+  },
+  {
+    "IATA_code": "PNY",
+    "ICAO_code": "VOPC",
+    "airport_name": "Pondicherry Airport",
+    "city_name": "Pondicherry",
+    "coordinates": {
+      "x": 11.969455,
+      "y": 79.816654
+    }
+  },
+  {
+    "IATA_code": "PBD",
+    "ICAO_code": "VAPR",
+    "airport_name": "Porbandar Airport",
+    "city_name": "Porbandar",
+    "coordinates": {
+      "x": 21.64289,
+      "y": 69.61469
+    }
+  },
+  {
+    "IATA_code": "IXZ",
+    "ICAO_code": "VOPB",
+    "airport_name": "Port Blair Airport",
+    "city_name": "Port Blair",
+    "coordinates": {
+      "x": 11.675194,
+      "y": 92.747607
+    }
+  },
+  {
+    "IATA_code": "PUT",
+    "ICAO_code": "",
+    "airport_name": "Puttaparthi Airport",
+    "city_name": "Puttaparthi",
+    "coordinates": {
+      "x": 14.10653,
+      "y": 77.84817
+    }
+  },
+  {
+    "IATA_code": "RPR",
+    "ICAO_code": "VARP",
+    "airport_name": "Raipur Airport",
+    "city_name": "Raipur",
+    "coordinates": {
+      "x": 21.230037,
+      "y": 81.653414
+    }
+  },
+  {
+    "IATA_code": "ATQ",
+    "ICAO_code": "VIAR",
+    "airport_name": "Raja Sansi Airport",
+    "city_name": "Amritsar",
+    "coordinates": {
+      "x": 31.72021,
+      "y": 74.8008
+    }
+  },
+  {
+    "IATA_code": "RJA",
+    "ICAO_code": "VORY",
+    "airport_name": "Rajahmundry Airport",
+    "city_name": "Rajahmundry",
+    "coordinates": {
+      "x": 16.979876,
+      "y": 81.78741
+    }
+  },
+  {
+    "IATA_code": "RAJ",
+    "ICAO_code": "VARK",
+    "airport_name": "Rajkot Airport",
+    "city_name": "Rajkot",
+    "coordinates": {
+      "x": 22.309404,
+      "y": 70.78124269532492
+    }
+  },
+  {
+    "IATA_code": "RJI",
+    "ICAO_code": "",
+    "airport_name": "Rajouri Airport",
+    "city_name": "Rajouri",
+    "coordinates": {
+      "x": 33.3775715,
+      "y": 74.31531414763674
+    }
+  },
+  {
+    "IATA_code": "RMD",
+    "ICAO_code": "",
+    "airport_name": "Ramagundam Airport",
+    "city_name": "Ramagundam",
+    "coordinates": {
+      "x": 18.763986,
+      "y": 79.434826
+    }
+  },
+  {
+    "IATA_code": "RTC",
+    "ICAO_code": "VARG",
+    "airport_name": "Ratnagiri Airport",
+    "city_name": "Ratnagiri",
+    "coordinates": {
+      "x": 17.01486015,
+      "y": 73.3303872302339
+    }
+  },
+  {
+    "IATA_code": "REW",
+    "ICAO_code": "",
+    "airport_name": "Rewa Airport",
+    "city_name": "Rewa",
+    "coordinates": {
+      "x": 24.548791,
+      "y": 81.323963
+    }
+  },
+  {
+    "IATA_code": "RRK",
+    "ICAO_code": "VERK",
+    "airport_name": "Rourkela Airport",
+    "city_name": "Rourkela",
+    "coordinates": {
+      "x": 22.25484455,
+      "y": 84.8155119802054
+    }
+  },
+  {
+    "IATA_code": "JRH",
+    "ICAO_code": "VEJT",
+    "airport_name": "Rowriah Airport",
+    "city_name": "Jorhat",
+    "coordinates": {
+      "x": 26.72934295,
+      "y": 94.1720966824326
+    }
+  },
+  {
+    "IATA_code": "BHJ",
+    "ICAO_code": "VABJ",
+    "airport_name": "Rudra Mata Airport",
+    "city_name": "Bhuj",
+    "coordinates": {
+      "x": 23.275686800000003,
+      "y": 69.66374549345942
+    }
+  },
+  {
+    "IATA_code": "RUP",
+    "ICAO_code": "VERU",
+    "airport_name": "Rupsi Airport",
+    "city_name": "Rupsi",
+    "coordinates": {
+      "x": 26.1417714,
+      "y": 89.90878043767745
+    }
+  },
+  {
+    "IATA_code": "SXV",
+    "ICAO_code": "VOSM",
+    "airport_name": "Salem Airport",
+    "city_name": "Salem",
+    "coordinates": {
+      "x": 11.78229975,
+      "y": 78.06308651088307
+    }
+  },
+  {
+    "IATA_code": "TEZ",
+    "ICAO_code": "VETZ",
+    "airport_name": "Salonibari Airport",
+    "city_name": "Tezpur",
+    "coordinates": {
+      "x": 27.2961368,
+      "y": 94.09734635719008
+    }
+  },
+  {
+    "IATA_code": "IXG",
+    "ICAO_code": "VABM",
+    "airport_name": "Sambre Airport",
+    "city_name": "Belgaum",
+    "coordinates": {
+      "x": 15.884318,
+      "y": 74.577209
+    }
+  },
+  {
+    "IATA_code": "JAI",
+    "ICAO_code": "VIJP",
+    "airport_name": "Sanganeer Airport",
+    "city_name": "Jaipur",
+    "coordinates": {
+      "x": 26.827049,
+      "y": 75.813506
+    }
+  },
+  {
+    "IATA_code": "TNI",
+    "ICAO_code": "VIST",
+    "airport_name": "Satna Airport",
+    "city_name": "Satna",
+    "coordinates": {
+      "x": 24.561878200000002,
+      "y": 80.85495554511736
+    }
+  },
+  {
+    "IATA_code": "IXJ",
+    "ICAO_code": "VIJU",
+    "airport_name": "Satwari Airport",
+    "city_name": "Jammu",
+    "coordinates": {
+      "x": 32.6793,
+      "y": 74.8303
+    }
+  },
+  {
+    "IATA_code": "SSE",
+    "ICAO_code": "VASL",
+    "airport_name": "Sholapur Airport",
+    "city_name": "Sholapur",
+    "coordinates": {
+      "x": 17.67152,
+      "y": 75.91044
+    }
+  },
+  {
+    "IATA_code": "SLV",
+    "ICAO_code": "VISM",
+    "airport_name": "Simla Airport",
+    "city_name": "Simla",
+    "coordinates": {
+      "x": 22.893005,
+      "y": 88.366601
+    }
+  },
+  {
+    "IATA_code": "IXA",
+    "ICAO_code": "VEAT",
+    "airport_name": "Singerbhil Airport",
+    "city_name": "Agartala",
+    "coordinates": {
+      "x": 23.886818,
+      "y": 91.242205
+    }
+  },
+  {
+    "IATA_code": "IXW",
+    "ICAO_code": "VEJS",
+    "airport_name": "Sonari Airport",
+    "city_name": "Jamshedpur",
+    "coordinates": {
+      "x": 22.8136029,
+      "y": 86.1693038372328
+    }
+  },
+  {
+    "IATA_code": "NAG",
+    "ICAO_code": "VANP",
+    "airport_name": "Sonegaon Airport",
+    "city_name": "Nagpur",
+    "coordinates": {
+      "x": 21.100058,
+      "y": 79.052059
+    }
+  },
+  {
+    "IATA_code": "SXR",
+    "ICAO_code": "VISR",
+    "airport_name": "Srinagar Airport",
+    "city_name": "Srinagar",
+    "coordinates": {
+      "x": 34.08582,
+      "y": 74.8002
+    }
+  },
+  {
+    "IATA_code": "STV",
+    "ICAO_code": "VASU",
+    "airport_name": "Surat Airport",
+    "city_name": "Surat",
+    "coordinates": {
+      "x": 21.117152,
+      "y": 72.742134
+    }
+  },
+  {
+    "IATA_code": "TEI",
+    "ICAO_code": "VETJ",
+    "airport_name": "Tezu Airport",
+    "city_name": "Tezu",
+    "coordinates": {
+      "x": 27.9426344,
+      "y": 96.13487309149708
+    }
+  },
+  {
+    "IATA_code": "TJV",
+    "ICAO_code": "VOTJ",
+    "airport_name": "Thanjavur Airport",
+    "city_name": "Thanjavur",
+    "coordinates": {
+      "x": 10.759374,
+      "y": 79.105859
+    }
+  },
+  {
+    "IATA_code": "TRV",
+    "ICAO_code": "VOTV",
+    "airport_name": "Thiruvananthapuram International Airport",
+    "city_name": "Trivandrum",
+    "coordinates": {
+      "x": 8.4820416,
+      "y": 76.91905902167463
+    }
+  },
+  {
+    "IATA_code": "TIR",
+    "ICAO_code": "VOTP",
+    "airport_name": "Tirupati Airport",
+    "city_name": "Tirupati",
+    "coordinates": {
+      "x": 13.628291,
+      "y": 79.419528
+    }
+  },
+  {
+    "IATA_code": "TRZ",
+    "ICAO_code": "VOTR",
+    "airport_name": "Trichy Airport",
+    "city_name": "Trichy",
+    "coordinates": {
+      "x": 10.7644214,
+      "y": 78.7082925
+    }
+  },
+  {
+    "IATA_code": "TCR",
+    "ICAO_code": "",
+    "airport_name": "Tuticorin Airport",
+    "city_name": "Tuticorin",
+    "coordinates": {
+      "x": 8.7261275,
+      "y": 78.01810613222892
+    }
+  },
+  {
+    "IATA_code": "BDQ",
+    "ICAO_code": "VABO",
+    "airport_name": "Vadodara Airport",
+    "city_name": "Vadodara",
+    "coordinates": {
+      "x": 22.334702,
+      "y": 73.227593
+    }
+  },
+  {
+    "IATA_code": "VNS",
+    "ICAO_code": "VIBN",
+    "airport_name": "Varanasi Airport",
+    "city_name": "Varanasi",
+    "coordinates": {
+      "x": 25.32727,
+      "y": 82.987343
+    }
+  },
+  {
+    "IATA_code": "VGA",
+    "ICAO_code": "VOBZ",
+    "airport_name": "Vijayawada Airport",
+    "city_name": "Vijayawada",
+    "coordinates": {
+      "x": 16.508661,
+      "y": 80.642739
+    }
+  },
+  {
+    "IATA_code": "VTZ",
+    "ICAO_code": "VEVZ",
+    "airport_name": "Vishakhapatnam Airport",
+    "city_name": "Vishakhapatnam",
+    "coordinates": {
+      "x": 17.674,
+      "y": 83.22
+    }
+  },
+  {
+    "IATA_code": "WGC",
+    "ICAO_code": "VOWA",
+    "airport_name": "Warangal Airport",
+    "city_name": "Warangal",
+    "coordinates": {
+      "x": 17.9140552,
+      "y": 79.6036086
+    }
+  },
+  {
+    "IATA_code": "ZER",
+    "ICAO_code": "VEZO",
+    "airport_name": "Zero Airport",
+    "city_name": "Zero",
+    "coordinates": {
+      "x": 27.5883,
+      "y": 93.8281
+    }
+  }
+]

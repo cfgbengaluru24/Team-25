@@ -6,6 +6,7 @@ dotenv.config();
 const apiKey = process.env.GEO_API_KEY;
 
 async function getCoordinates(address) {
+  console.log(address);
   const encodedAddress = encodeURIComponent(address);
   const url = `https://api.geoapify.com/v1/geocode/search?text=${encodedAddress}&apiKey=${apiKey}`;
   const response = await axios.get(url);
