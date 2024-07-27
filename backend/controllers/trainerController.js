@@ -4,6 +4,31 @@ import getCoordinates from "../services/geocode.js";
 import Trainer from "../models/Trainer.js";
 import generateSessionsApplied from "../utils/generateSessionsArray.js";
 import findNearbyAirport from "../services/airportFinder.js";
+import getDistance from "../services/findDistance.js";
+
+const stations = [
+  "YPR",
+  "NDLS",
+  "SBC",
+  "PUNE",
+  "ADI",
+  "MAS",
+  "KYN",
+  "ADI",
+  "PBE",
+];
+
+const getRandomStations = (stationArray) => {
+  if (stationArray.length < 2) {
+    throw new Error("Not enough stations to select from.");
+  }
+  let srcStation, destStation;
+  do {
+    srcStation = stationArray[Math.floor(Math.random() * stationArray.length)];
+    destStation = stationArray[Math.floor(Math.random() * stationArray.length)];
+  } while (srcStation === destStation);
+  return { srcStation, destStation };
+};
 
 export const createTrainer = async (req, res) => {
   const { name, email, gender, address } = req.body;
@@ -183,7 +208,26 @@ export const getBestTrainers = async (req, res) => {
   res.status(StatusCodes.OK).json({ trainers, selectedTrainers });
 };
 
+function formatDate(date) {
+  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are zero-based
+  const year = date.getFullYear();
+
+  return `${day}/${month}/${year}`;
+}
+
 export const getCheapestFlights = async (req, res) => {
+  const { location, date } = req.body;
+  if (!location || !date) {
+    throw new BadRequestError("Location is required, date is required");
+  }
+  const dateObj = new Date(date);
+  const formattedDate = formatDate(dateObj);
+  const coordinates = await getCoordinates(location);
+  const locationAirports = await findNearbyAirport(
+    coordinates.x,
+    coordinates.y
+  );
   const trainers = await Trainer.find({}, { sessions_applied: 0 });
   const trainers_updated = await Promise.all(
     trainers.map(async (trainer) => {
@@ -192,7 +236,28 @@ export const getCheapestFlights = async (req, res) => {
         trainerObj.geolocation.x,
         trainerObj.geolocation.y
       );
+      const distance = await getDistance(
+        trainerObj.geolocation.x,
+        trainerObj.geolocation.y,
+        coordinates.x,
+        coordinates.y
+      );
       trainerObj.airport = airport;
+      trainerObj.distance = distance / 1000;
+      if (trainerObj.distance < 35) {
+        trainerObj.mode = "own";
+      } else if (trainerObj.distance < 200) {
+        trainerObj.mode = "bus";
+        trainerObj.bookingUrl = `https://www.makemytrip.com/bus/search/${trainerObj.airport.city_name}/${locationAirports.city_name}/30-07-2024`;
+      } else if (trainerObj.distance < 300) {
+        trainerObj.mode = "train";
+        const { srcStation, destStation } = getRandomStations(stations);
+        trainerObj.bookingUrl =
+          trainerObj.bookingUrl = `https://www.makemytrip.com/railways/listing?classCode=&className=All%20Classes&date=20240729&destStn=${destStation}&srcStn=${srcStation}`;
+      } else {
+        trainerObj.mode = "flight";
+        trainerObj.bookingUrl = `https://www.makemytrip.com/flight/search?itinerary=${trainerObj.airport.IATA_code}-${locationAirports.IATA_code}-${formattedDate}&tripType=O&paxType=A-1_C-0_I-0&intl=false&cabinClass=E&ccde=IN&lang=eng`;
+      }
       return trainerObj;
     })
   );
