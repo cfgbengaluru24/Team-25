@@ -13,6 +13,7 @@ import cookieParser from "cookie-parser";
 
 //router
 import sampleRouter from "./Routes/sampleRoutes.js";
+import trainerRouter from "./Routes/trainerRoutes.js";
 
 //middleware
 import sampleMiddleware from "./middleware/sampleMiddleware.js";
@@ -40,6 +41,7 @@ app.use(cookieParser());
 // app.use(mongoSanitize());
 
 app.use("/api/v1/sample", sampleMiddleware, sampleRouter);
+app.use("/api/v1/trainer", trainerRouter);
 
 app.use(notFoundMiddleware);
 app.use(errorHandlerMiddleware);
