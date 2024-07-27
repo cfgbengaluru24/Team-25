@@ -3,6 +3,7 @@ import { BadRequestError } from "../Errors/index.js";
 import getCoordinates from "../services/geocode.js";
 import Trainer from "../models/Trainer.js";
 import generateSessionsApplied from "../utils/generateSessionsArray.js";
+import findNearbyAirport from "../services/airportFinder.js";
 
 export const createTrainer = async (req, res) => {
   const { name, email, gender, address } = req.body;
@@ -66,6 +67,22 @@ export const getBestTrainers = async (req, res) => {
     gender: "female",
   });
 
+  const selectedTrainers = await Trainer.find(
+    {
+      sessions_applied: {
+        $elemMatch: {
+          date: new Date(formattedDate),
+          is_selected: true,
+        },
+      },
+    },
+    { sessions_applied: 0 }
+  );
+
+  if (maleCount + femaleCount >= 10) {
+    res.status(StatusCodes.OK).json({ trainers: [], selectedTrainers });
+  }
+
   const maleAvailableCount = await Trainer.countDocuments({
     sessions_applied: {
       $elemMatch: {
@@ -102,6 +119,9 @@ export const getBestTrainers = async (req, res) => {
     query = { ...query, gender: "male" };
   }
 
+  const R = 6371;
+  const PI = Math.PI;
+
   const trainers = await Trainer.aggregate([
     { $match: query },
     {
@@ -118,12 +138,38 @@ export const getBestTrainers = async (req, res) => {
           },
         },
         distance: {
-          $add: [
-            { $pow: [{ $subtract: ["$geolocation.x", x] }, 2] },
-            { $pow: [{ $subtract: ["$geolocation.y", y] }, 2] },
-          ],
+          $let: {
+            vars: {
+              lat1: { $multiply: ["$geolocation.y", PI / 180] },
+              lon1: { $multiply: ["$geolocation.x", PI / 180] },
+              lat2: { $multiply: [y, PI / 180] },
+              lon2: { $multiply: [x, PI / 180] },
+            },
+            in: {
+              $multiply: [
+                R,
+                {
+                  $acos: {
+                    $add: [
+                      { $multiply: [{ $sin: "$$lat1" }, { $sin: "$$lat2" }] },
+                      {
+                        $multiply: [
+                          { $cos: "$$lat1" },
+                          { $cos: "$$lat2" },
+                          { $cos: { $subtract: ["$$lon1", "$$lon2"] } },
+                        ],
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
         },
       },
+    },
+    {
+      $unset: "sessions_applied",
     },
     {
       $sort: {
@@ -133,5 +179,66 @@ export const getBestTrainers = async (req, res) => {
     },
     { $limit: 10 },
   ]);
-  res.status(StatusCodes.OK).json({ trainers });
+
+  res.status(StatusCodes.OK).json({ trainers, selectedTrainers });
+};
+
+export const getCheapestFlights = async (req, res) => {
+  const trainers = await Trainer.find({}, { sessions_applied: 0 });
+  const trainers_updated = await Promise.all(
+    trainers.map(async (trainer) => {
+      const trainerObj = trainer.toObject();
+      const airport = await findNearbyAirport(
+        trainerObj.geolocation.x,
+        trainerObj.geolocation.y
+      );
+      trainerObj.airport = airport;
+      return trainerObj;
+    })
+  );
+  res.status(StatusCodes.OK).json({ trainers: trainers_updated });
+};
+
+export const selectTrainer = async (req, res) => {
+  const { id, session_date } = req.body;
+  if (!id || !session_date) {
+    throw new BadRequestError("Trainer ID and Session Date are required");
+  }
+  const trainer = await Trainer.findById(id);
+  if (!trainer) {
+    throw new BadRequestError("Trainer not found");
+  }
+  const sessionIndex = trainer.sessions_applied.findIndex(
+    (session) =>
+      session.date.toISOString() ===
+      new Date(session_date.split("T")[0]).toISOString()
+  );
+  if (sessionIndex === -1) {
+    throw new BadRequestError("Trainer session not found");
+  }
+  trainer.sessions_applied[sessionIndex].is_selected = true;
+  await trainer.save();
+  res.status(StatusCodes.OK).json({ trainer });
+};
+
+export const rejectTrainer = async (req, res) => {
+  const { id, session_date } = req.body;
+  if (!id || !session_date) {
+    throw new BadRequestError("Trainer ID and Session Date are required");
+  }
+  const trainer = await Trainer.findById(id);
+  if (!trainer) {
+    throw new BadRequestError("Trainer not found");
+  }
+  const sessionIndex = trainer.sessions_applied.findIndex(
+    (session) =>
+      session.date.toISOString() ===
+      new Date(session_date.split("T")[0]).toISOString()
+  );
+  if (sessionIndex === -1) {
+    throw new BadRequestError("Trainer session not found");
+  }
+  trainer.sessions_applied[sessionIndex].is_selected = false;
+  await trainer.save();
+  res.status(StatusCodes.OK).json({ trainer });
 };
