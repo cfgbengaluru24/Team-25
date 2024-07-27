@@ -1,0 +1,21 @@
+# Ignore .env files
+.env
+
+# Ignore other common sensitive files
+*.env
+.env.*
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python specific files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore package manager directories
+node_modules/
