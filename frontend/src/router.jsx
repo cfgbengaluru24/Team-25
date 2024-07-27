@@ -5,6 +5,8 @@ import Signup from "./auth/Signup";
 import AdminDashboard from "./Admin/AdminDashboard";
 import MentorList from "./Admin/MentorList";
 import CampList from "./Admin/CampList";
+import TraineeDashboard from './Trainee/TraineeDashboard'
+import Courses from './Trainee/Courses'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,16 @@ const router = createBrowserRouter([
 
     ]
   },
+  {
+    path:'/trainee',
+    element: <TraineeDashboard />,
+    children: [
+      {
+        path:'courses',
+        element: <Courses />
+      }
+    ]
+  }
 ])
 
 export default router
