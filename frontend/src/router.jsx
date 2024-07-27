@@ -10,6 +10,7 @@ import Courses from './Trainee/Courses'
 import TrainerDashboard from "./Trainer/TrainerDashboard";
 import TravelDetails from "./Trainer/TravelDetails";
 import AddTrainer from "./Admin/AddTrainer";
+import TravelList from "./Admin/TravelList";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: 'add-trainer',
         element: <AddTrainer/>
+      },
+      {
+        path: 'travel/:id',
+        element: <TravelList />
       }
 
     ]
