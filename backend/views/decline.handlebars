@@ -1,0 +1,80 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Allocation Approved</title>
+    <style>
+      body { background-color: #fffefc; color: #212529; font-family: Arial,
+      sans-serif; margin: 0; padding: 0; } .card { background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px; margin: 20px 0;
+      position: relative; max-width: 600px; margin: 0 auto; background-color:
+      #f8f8f8; /* Add a background color */ } .logo { display: block; margin: 0
+      auto; } .circular-logo { width: 100px; height: 100px; } .rectangular-logo
+      { max-width: 100%; /* Set maximum width to maintain aspect ratio */
+      height: auto; /* Calculate height based on aspect ratio */ margin-top:
+      20px; } .header { text-align: center; margin-bottom: 20px; }
+      .company-title { font-size: 24px; margin-bottom: 10px; } .button-container
+      { text-align: center; } .button { margin: 10px; padding: 12px 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #e8590c; /* Use
+      primary color */ color: #fffefc; text-decoration: none; transition:
+      background-color 0.3s ease; border: none; border-radius: 5px; display:
+      inline-block; } .button:hover { background-color: #e86e2c; /* Use
+      primaryLight color */ } .line { border-top: 2px solid #ebebeb; margin:
+      20px 0; } .footer { text-align: center; margin-bottom: 20px; }
+      .footer-text { font-size: 12px; margin-bottom: 5px; text-decoration:
+      underline; color: #fcc418; } .club-request { text-align: center;
+      font-size: 18px; margin-bottom: 20px; } .request-details { font-size:
+      16px; margin-bottom: 10px; } .name { font-weight: bold; } /* Dark Mode
+      Styles */ @media (prefers-color-scheme: dark) { body { background-color:
+      #2d2d2d; /* Dark background color */ color: #ffffff; /* Light text color
+      */ } .card { background-color: #2d2d2d; /* Dark card background color */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); } .button {
+      background-color: #e8590c; /* Use primary color */ color: #fffefc; }
+      .button:hover { background-color: #e86e2c; /* Use primaryLight color */ }
+      .footer-text { color: #fcc418; /* Light text color */ } }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="header">
+        <img src="cid:SC" alt="Circular Logo" class="logo circular-logo" />
+        <h1 class="company-title">Student Council</h1>
+      </div>
+
+      <p>Hello {{clubName}},</p>
+      <p>Your room allocation request has been declined for the following:</p>
+
+      <div class="club-request">
+        <p class="request-details"><span class="name">{{clubName}}</span>
+          has been declined a room in Building
+          <span class="name">{{building}}</span>
+          & Room
+          <span class="name">{{room}}</span>.</p>
+      </div>
+
+      <div class="button-container">
+        <a href="{{link}}" class="button" style="color: #fffefc;">View Remarks</a>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="footer">
+        <p class="footer-text">Developed by
+          <a
+            href="https://www.linkedin.com/in/rishabh-jain-069005224/"
+            style="color: #fcc418; text-decoration: underline;"
+          >Rishabh Jain</a></p>
+      </div>
+
+      <img
+        src="cid:MIT"
+        alt="Rectangular Logo"
+        class="logo rectangular-logo"
+        style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%);"
+      />
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,5 @@
+flask
+SpeechRecognition
+pyttsx3
+fireworks-ai
+python-dotenv

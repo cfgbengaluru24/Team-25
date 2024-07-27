@@ -1,2 +1,6 @@
-flask
-flask_cors
+Flask
+SpeechRecognition
+pyttsx3
+python-dotenv
+fireworks-ai
+flask-cors
