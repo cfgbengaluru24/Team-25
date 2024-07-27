@@ -8,7 +8,6 @@ async function modifyData() {
       const coordinates = await getCoordinates(
         `${airport.airport_name}, ${airport.city_name}`
       );
-      console.log(coordinates);
       return {
         ...airport,
         coordinates,
