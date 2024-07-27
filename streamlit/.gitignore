@@ -1,0 +1,6 @@
+# Ignore .env files
+.env
+
+# Ignore other common sensitive files
+*.env
+.env.*

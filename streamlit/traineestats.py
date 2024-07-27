@@ -4,10 +4,15 @@ import plotly.express as px
 import plotly.graph_objects as go
 from pymongo import MongoClient
 import certifi
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+ mongo = os.getenv('MONGO_URL')
 
 # MongoDB connection
 ca = certifi.where()
-client = MongoClient("mongodb+srv://ganeshadithya:lUOT0aHLfybD4MRv@cluster0.pigh36w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", tlsCAFile=ca)
+client = MongoClient(mongo, tlsCAFile=ca)
 db = client['cfg']
 collection = db['trainee']
 
