@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
-import campsData from "../static data/camps"
+import { Link } from "react-router-dom";
+import campsData from "../static data/camps";
 
 const CampList = () => {
   return (
@@ -20,43 +20,45 @@ const CampList = () => {
                   Date
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Price
-                </th>
-                <th scope="col" className="px-6 py-3">
                   Select
                 </th>
               </tr>
             </thead>
             <tbody>
               {campsData.map((camp, index) => (
-                <tr key={camp.id} className={`border-b ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
-                  <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                <tr
+                  key={camp.id}
+                  className={`border-b ${
+                    index % 2 === 0 ? "bg-white" : "bg-gray-50"
+                  }`}
+                >
+                  <th
+                    scope="row"
+                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
                     {camp.name}
                   </th>
+                  <td className="px-6 py-4">{camp.location}</td>
+                  <td className="px-6 py-4">{camp.dates}</td>
                   <td className="px-6 py-4">
-                    {camp.location}
-                  </td>
-                  <td className="px-6 py-4">
-                    {camp.dates}
-                  </td>
-                  <td className="px-6 py-4">
-                    {camp.price}
-                  </td>
-                  <td className="px-6 py-4">
-                    <Link to={{
-                      pathname: `${camp.id}`,
-                      state: { location: camp.location }
-                    }} className="font-medium text-blue-600 hover:underline">More Details</Link>
+                    <Link
+                      to={{
+                        pathname: `${camp.id}`,
+                        state: { location: camp.location },
+                      }}
+                      className="font-medium text-blue-600 hover:underline"
+                    >
+                      More Details
+                    </Link>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CampList
+export default CampList;
