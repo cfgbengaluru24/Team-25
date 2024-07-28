@@ -1,0 +1,31 @@
+{
+    "quizTitle": "Ethics And Personality Assessment",
+    "quizSynopsis": "This quiz assesses your understanding of ethics and gender sensitivity.",
+    "questions": [
+      {
+        "question": "Is it ethical to take credit for someone else's work?",
+        "answers": ["Yes", "No"],
+        "correctAnswer": 2,
+        "section": "ethics"
+      },
+      {
+        "question": "Should you report a coworker who is violating company policy, even if it could cost them their job?",
+        "answers": ["Yes", "No"],
+        "correctAnswer": 1,
+        "section": "ethics"
+      },
+      {
+        "question": "Should all employees receive the same opportunities for career advancement regardless of gender?",
+        "answers": ["Yes", "No"],
+        "correctAnswer": 1,
+        "section": "genderSensitivity"
+      },
+      {
+        "question": "Is it important to have training on gender sensitivity and diversity in the workplace?",
+        "answers": ["Yes", "No"],
+        "correctAnswer": 1,
+        "section": "genderSensitivity"
+      }
+    ]
+  }
+  
