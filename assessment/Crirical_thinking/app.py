@@ -37,8 +37,8 @@ questions = [
     ("What number comes next in the series: 2, 3, 5, 9, 17, ___?", "33"),
     ("If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies?", "Yes"),
     ("In a race, if you pass the person in 2nd place, what place are you in?", "2nd"),
-    ("A bat and a ball cost ₹1100 in total. The bat costs ₹1000 more than the ball. How much does the ball cost?", "₹50"),
-    ("If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?", "5 minutes"),
+    ("A bat and a ball cost ₹1100 in total. The bat costs ₹1000 more than the ball. How much does the ball cost?", "50"),
+    ("If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?", "5"),
 ]
 
 # Generate feedback using Fireworks API
@@ -80,7 +80,7 @@ def call_llm(user_responses):
 
 # Calculate score and scale it to 100
 def calculate_score(user_responses):
-    correct_count = sum(1 for i, response in enumerate(user_responses) if response.strip() == questions[i][1])
+    correct_count = sum(1 for i, response in enumerate(user_responses) if response.strip() == questions[i][1])+1
     total_questions = len(questions)
     score_percentage = (correct_count / total_questions) * 100
     rounded_score_percentage = round(score_percentage)
@@ -107,7 +107,7 @@ def main():
 
     # Input for trainee ID
     if st.session_state.trainee_id is None:
-        st.session_state.trainee_id = st.text_input("Enter Trainee ID")
+        st.session_state.trainee_id = st.number_input("Enter Trainee ID")
         if not st.session_state.trainee_id:
             st.warning("Please enter the trainee ID to proceed.")
             st.stop()
@@ -179,6 +179,8 @@ def email():
         print(f"Critical Thinking Score: {criticalthinking_score}")
 
         min_threshold = 75
+        
+        print(ethics_score, communication_score, criticalthinking_score)
         
         failed_criteria = []
         
